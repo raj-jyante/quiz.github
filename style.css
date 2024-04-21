@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.initial-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-inline: auto;
+}
+.quiz-image{
+        width: 40%;
+}
+.quiz-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.quiz-button button{
+    background-color: rgba(53, 189, 58, 1);
+    color: white;
+    font-size: 2rem;
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 1px 2px rgb(24, 92, 27) ;
+    font-weight: 600;   
+    cursor: pointer;
+}
+.quiz-button button:active{
+    background-color: rgb(41, 131, 44);
+}
+
+.initial-score p{
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.question-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 213, 194);
+    
+}
+/* .bg-color-before{
+    background-color: black;
+}
+
+.bg-color-after {
+    transition:background-color 10s ease  ;
+    background-color: red;
+} */
+.upper-div{
+    width: 80%;
+    margin-top: 52px;
+}
+.question-image{
+     
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+
+.q-img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.question-image img{
+    object-fit: contain;
+}
+.question-number{
+    display: flex;
+    justify-content: end;
+
+}
+.question-number p{
+    font-size: 2rem;
+    padding: 12px 24px;
+    background-color: rgba(254, 195, 61, 1);
+    font-weight: 600;
+    border-radius: 12px;
+    
+}
+.question-div{
+    background-color: rgba(245, 245, 245, 0.48);
+    height: 152px;
+    width: 80%;
+    margin-top: 60px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    box-shadow: 3px 3px 3px 4px rgba(201, 163, 163, 0.576);
+}
+
+#question-text{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-left: 80px;
+}
+.timer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-top: 50px;
+    width: 80%;
+}
+.timer p{
+    font-size: 2.2rem;
+    padding: 12px 24px;
+    background-color:rgba(2, 164, 9, 0.43);
+    font-weight: 600;
+    border-radius: 12px;
+    color: white;
+}
+
+.option-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(245, 245, 245, 0.48);
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+    border-radius: 12px;
+    padding: 50px 0px 50px 0px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 3px 4px rgba(201, 163, 163, 0.576);
+}
+
+.option-text{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 16px 16px 16px 40px;
+    border: 3px solid rgb(207, 189, 189);
+    font-size: 1.75rem;
+    font-weight: 600;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.border-wrong{
+    border: 2px solid red
+}
+
+#wrong-option-selected{
+    color: red;
+    
+}
+.border-right{
+border: 2px solid green;
+}
+
+#right-option-selected{
+color: green;
+
+}
+
+
+
+.option-text:active {
+    background-color: aqua;
+}
+
+.option-selected{
+    text-align: end;
+}
+
+.next{
+    color: green;
+    font-size: 2rem;
+    width: 80%;
+    font-weight: 600;
+    text-align: end;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.result-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 52px;
+    gap: 140px;
+}
+.result-page p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    
+}
+.progress-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.progress-bar{
+    height: 80px;
+    width: 90%;
+    border-radius: 16px;
+    border: 2px solid black;
+    font-size: 2rem;
+    border-radius: 30px;
+    background-color: rgba(255, 122, 122, 1);
+}
+
+
+#incresing-bar{
+    background-color: rgba(53, 189, 58, 1);
+    border: 1px solid green;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    
+}
+.quote-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 200px;
+}
+#retry{
+    padding: 10px 28px;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+
+.hidden{
+    display: none;
+}
